@@ -1,2 +1,2 @@
-# ECS171FinalProject
+# ECS171FinalProjectGroup17
 group 17
