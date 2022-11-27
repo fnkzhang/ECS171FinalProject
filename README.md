@@ -46,11 +46,11 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 
 - We split our preprocessed data with a 70/30 split.
 - The layers used in the neural network are as follows (activation, nodes):
-    -Relu, 7
-    -Tanh, 4
-    -Selu, 6
-    -Softplus, 5
-    -Sigmoid, 1
+    - Relu, 7
+    - Tanh, 4
+    - Selu, 6
+    - Softplus, 5
+    - Sigmoid, 1
 - The loss function used is binary cross-entropy.
 - We trained the model with 10 epochs.
 - After using the trained model on our test split, we used a threshold of 0.5 to covnert the predicted values to 0 and 1.
