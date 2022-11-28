@@ -55,3 +55,5 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - We trained the model with 10 epochs.
 - After using the trained model on our test split, we used a threshold of 0.5 to covnert the predicted values to 0 and 1.
 - The classification report gave us a 1.00 accuracy.
+- To ensure we are not overfitting we ran different splits using different random states, these all yielded 1.00 accuracy.
+- We think our model is towards the middle of the over/underfitting graph.
