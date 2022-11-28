@@ -41,3 +41,19 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - After a second round of heatmaps and correlation matrix, our final list of selected columns were as follows: 'edu_generalized', 'sex_values', 'marital_values', 'hours-per-week', 'capital-loss', 'capital-gain', 'age', 'occupation_values', and 'workclass_values'. Our final column will be our result column: 'income_values'.
 - Finally, we simplified the categories of 'occupation' and 'workclass' to highlight the predominant features that would affect our outcome and also simplify our model's complexity.
 - With a last correlation matrix check, we could verify that our selected features play a greater role in determining the outcome of our income_values, and can proceed with a simplified dataset. 
+
+## First Model (Neural Network)
+
+- We split our preprocessed data with a 70/30 split.
+- The layers used in the neural network are as follows (activation, nodes):
+    - Relu, 7
+    - Tanh, 4
+    - Selu, 6
+    - Softplus, 5
+    - Sigmoid, 1
+- The loss function used is binary cross-entropy.
+- We trained the model with 10 epochs.
+- After using the trained model on our test split, we used a threshold of 0.5 to covnert the predicted values to 0 and 1.
+- The classification report gave us a 1.00 accuracy.
+- To ensure we are not overfitting we ran different splits using different random states, these all yielded 1.00 accuracy.
+- We think our model is towards the middle of the over/underfitting graph.
