@@ -54,6 +54,5 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - The loss function used is binary cross-entropy.
 - We trained the model with 10 epochs.
 - After using the trained model on our test split, we used a threshold of 0.5 to covnert the predicted values to 0 and 1.
-- The classification report gave us a 1.00 accuracy.
-- To ensure we are not overfitting we ran different splits using different random states, these all yielded 1.00 accuracy.
-- We think our model is towards the middle of the over/underfitting graph.
+- The classification report gave us an accuracy of 0.83.
+- We think our model isn't really overfitting nor underfittiing as our loss graph quickly flattens out.
