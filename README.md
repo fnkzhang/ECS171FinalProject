@@ -99,5 +99,8 @@ Our data after preprocessing.
 ## Discussion
 
 ## Conclusion
-
+- Most of what we did went well; we were able to achieve our goal of figuring out what factors into people earning more.
+- Our models were also decently accurate, meaning that these results are also valid.
+- After looking at the results, we likely should have kept native country as a data column, as while a decent bit of our important features correlated well with earning 50k, others did not.
+- Thus, we should have checked native country, as it could still be an important feature.
 ## Collaboration
