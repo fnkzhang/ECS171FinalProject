@@ -24,28 +24,25 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 ### Data Exploration
 
 - Some features are a numerical representation of another feature: the column 'education' was pre-encoded and attached to the dataset as the column 'education-­num'.
-- The feature 'relationship' included specific values pertaining the individual's self-identified role in their relationship with a partner. Those in no romantic/guardian relationship were labeled as 'Not-in-family', or 'Unmarried'. This specific feature was lacking in terms of:
-    - single point of comparison. The self-identified role was relative and not unique enough to a single individual.
-    - vague attributes and minimal impact on our income_values; we chose to remove this feature from our dataset.
-- 'native-country' and 'race' were extremely skewed data points, and so we kept that in mind as moving forward with the pre-processing. Extremely skewed data could prove to be unhelpful/irrelevant in our model.
+- The feature 'relationship' included specific values pertaining the individual's self-identified role in their relationship with a partner. Those in no romantic/guardian relationship were labeled as 'Not-in-family', or 'Unmarried'.
+- 'native-country' and 'race' were extremely skewed data points.
 - From the description of 'workclass', we noticed some overlap between the categories of the values. 
     - 'Without­pay' and 'Never­worked' both meant the individual did not have an income.
     - 'Federal-­gov', 'Local-­gov', 'State-­gov' were all government jobs.
-    Still, we chose to see all the data points individual impact on our income through the heatmaps before choosing to simplify any of the 'workclass' categories.
-- the 'occupation' vs '50k' (ie. income_values) heatmap showed that there were specific jobs that were proving to have a great impact on the income, while all others were under 0.1 measure of correlation. We decided to single out those specific values and combine the rest of the jobs. 
-- 'fnlwgt' included values that described how common an individual's position reflected in society. This specific features poses irrelevant to our goal, and so we eventually removed it from our selected features. 
+- the 'occupation' vs '50k' (ie. income_values) heatmap showed that there were specific jobs that were proving to have a great impact on the income, while all others were under 0.1 measure of correlation.
+- 'fnlwgt' included values that described how common an individual's position reflected in society.
 - 'education' had values that spanned lower than hs graduate. Its heatmap against '50k' showed that those specifics didnt really alter our income_values.
 ### Pre-processing Data
 
 [Preprocessing Code](Preprocessing.ipynb)
 - We first did an initial check to verify that our data included no null values.
-- We dropped the feature 'relationship' as it seemed insufficient for our problem.
-- We then encoded all our categorical values and used a correlation matrix and pair-plots to compare our features. We could see from the pair plot that there don't seem to be any apparent correlation between the features. As a result, we continued analyzing the features further as relatively independent features.
-- We grouped any of the grade-school level education values to a 'non-hs graduate', to simply our values.
-- We then normalized and standardized our numerical data in order to give all features equal weightage for a second round of comparison.
-- After a second round of heatmaps and correlation matrix, our final list of selected columns were as follows: 'edu_generalized', 'sex_values', 'marital_values', 'hours-per-week', 'capital-loss', 'capital-gain', 'age', 'occupation_values', and 'workclass_values'. Our final column will be our result column: 'income_values'.
+- We dropped the feature 'relationship'.
+- We then encoded all our categorical values and used a correlation matrix and pair-plots to compare our features.
+- We grouped any of the grade-school level education values to a 'non-hs graduate'.
+- We then normalized and standardized our numerical data.
+- After a second round of heatmaps and correlation matrix, our final list of selected columns were as follows: 'edu_generalized', 'sex_values', 'marital_values', 'hours-per-week', 'capital-loss', 'capital-gain', 'age', 'occupation_values', and 'workclass_values'. Our final column will be our result column: '50k'.
 - Finally, we simplified the categories of 'occupation' and 'workclass' to highlight the predominant features that would affect our outcome and also simplify our model's complexity.
-- With a last correlation matrix check, we could verify that our selected features play a greater role in determining the outcome of our income_values, and can proceed with a simplified dataset. 
+- With a last correlation matrix check, we could verify that our selected features play a greater role in determining the outcome of our '50k' values, and can proceed with a simplified dataset. 
 
 ### First Model (Neural Network)
 
@@ -95,8 +92,36 @@ Our data after preprocessing.
 ![decision tree class report](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontreeclassreport.png?raw=true)
 ![decision tree](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontree.jpg?raw=true)
 
+### Data Exploration
+- There is no need to store the same feature values in two different ways; one of the columns can be dropped.
+- The feature 'relationship' values were lacking in terms of:
+  - single point of comparison. The self-identified role was relative and not unique enough to a single individual.
+  - vague attributes and minimal impact on our income_values. Seems to be not entirely helpful or descriptive.
+  Ultimately, it feels like subjective descriptors for our problem, and therefore not could result in a biased model. We decided to remove it.
+- 'native-country' and 'race' were extremely skewed data points and could prove to be unhelpful/irrelevant in our model.
+- Feature 'workclass' values where scattered and pretty niche fields, yet we chose to see all the data points individual impact on our income through the heatmaps before choosing to simplify any of the 'workclass' categories. 
+- the 'occupation' vs '50k' (ie. income_values) heatmap showed that there were specific jobs that were proving to have a great impact on the income, while all others were under 0.1 measure of correlation. We decided to single out those specific values and combine the rest of the jobs so we could use the niche jobs as a factor in our model.
+- 'fnlwgt' poses irrelevant to our goal, and so we eventually removed it from our selected features.
+- 'education' had values that spanned lower than hs graduate; these specifics aren't necessarily crucial in determining a persons income, as verified through the heatmaps.
+- 'capital gain/loss' seemed like a obvious, and therefore possible repetitive feature as one gaining money would obviously mean that they earn more money. However, we kept it due to believing that it represented good or bad investments of an individual.
 
-## Discussion
+### Preprocessing Data
+- The initial check for null values was to verify we weren't dealing with any missing values.
+- We dropped the feature 'relationship' as it seemed insufficient for our problem.
+- We could see from the pair plot that there don't seem to be any apparent correlation between the features. As a result, we continued analyzing the features further as relatively independent features.
+- We grouped any of the grade-school level education values to a 'non-hs graduate', to simply our values.
+- We then normalized and standardized our numerical data in order to give all features equal weightage for a second round of comparison.
+- We simplified the categories of 'occupation' and 'workclass' to highlight the predominant features that would affect our outcome and also simplify our model's complexity.
+
+### Model 1 (Neural Network)
+- We chose this model because it was decently familiar to us: it was used in lectures and discussion on the iris dataset, and we also had past experience with it in HW2
+- However, after we built it, we realized it was not very good for deducing feature importance, leading us to model 2.
+- The increase in training loss could have been an indication of overfitting, as the model was getting too specific resulting in higher loss for the rest of the data. Regardless, this specific model was displaying the indecisive case of increasing training loss and yet relatively high test accuracy, and so we thought to try a different model.
+### Model 2 (Decision Tree)
+- With model 2, we used a decision tree as it is easy to deduce feature importance by looking at the actual tree.
+- Some of the most important features were capital-gain, capital-loss, marriage-status, and education level.
+- Marriage-status as a feature seems like it would be affected by income levels and not the other way around, however.
+    - It seems more likely that with money, you are more likely to be able to support a family, rather than with a family, you earn more.
 
 ## Conclusion
 - Most of what we did went well; we were able to achieve our goal of figuring out what factors into people earning more.
