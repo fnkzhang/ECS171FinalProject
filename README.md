@@ -82,11 +82,14 @@ model.compile(optimizer = 'rmsprop', loss = 'binary_crossentropy')
 model2 = tree.DecisionTreeClassifier(max_depth = 5)
 ```
 ## Results
+
+### Preprocessing Data
+Our data after preprocessing.
+![Preprocessed Data](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/Preprocessed%20Data.png?raw=true)
+
 ### Second Model (Decision Tree)
 - This model gave us an accuracy of 0.82.
 ![decision tree](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontree.jpg?raw=true)
-
-### Preprocessing Data
 
 
 ## Discussion
