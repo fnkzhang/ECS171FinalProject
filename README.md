@@ -33,6 +33,7 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - 'education' had values that spanned lower than hs graduate. Its heatmap against '50k' showed that those specifics didnt really alter our income_values.
 ## Pre-processing Data
 
+[Preprocessing Code](Preprocessing.ipynb)
 - We first did an initial check to verify that our data included no null values.
 - We dropped the feature 'relationship' as it seemed insufficient for our problem.
 - We then encoded all our categorical values and used a correlation matrix and pair-plots to compare our features. We could see from the pair plot that there don't seem to be any apparent correlation between the features. As a result, we continued analyzing the features further as relatively independent features.
