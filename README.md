@@ -92,7 +92,7 @@ Our data after preprocessing.
 ![Training Loss](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/NN%20Training%20Loss.png?raw=true)
 
 ### Second Model (Decision Tree)
-- This model gave us an accuracy of 0.82.
+![decision tree class report](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontreeclassreport.png?raw=true)
 ![decision tree](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontree.jpg?raw=true)
 
 
