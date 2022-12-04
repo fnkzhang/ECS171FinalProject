@@ -55,6 +55,15 @@ _'A person’s earned income is correlated with numerous factors about the indiv
     - Selu, 6
     - Softplus, 5
     - Sigmoid, 1
+```
+model = Sequential()
+model.add(Dense(input_dim=9, units=7, activation='relu'))
+model.add(Dense(units = 4, activation = 'tanh'))
+model.add(Dense(units = 6, activation = 'selu'))
+model.add(Dense(units = 5, activation = 'softplus'))
+model.add(Dense(units = 1, activation = 'sigmoid'))
+model.compile(optimizer = 'rmsprop', loss = 'binary_crossentropy')
+```
 - The loss function used is binary cross-entropy.
 - We trained the model with 10 epochs.
 - After using the trained model on our test split, we used a threshold of 0.5 to covnert the predicted values to 0 and 1.
@@ -62,6 +71,8 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - We think our model isn't really overfitting nor underfittiing as our loss graph quickly flattens out.
 
 ## Results
+### Preprocessing Data
+
 
 ## Discussion
 
