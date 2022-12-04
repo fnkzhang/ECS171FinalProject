@@ -22,6 +22,7 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - Some values of our dataset include categorical values of strings. As such, we removed any white-spaces that were present in string values. 
 - Some features had missing/null values. We removed them from our dataset.
 ### Data Exploration
+[Data Exploration in NTBK](https://colab.research.google.com/drive/1D4CDiRiPCTuvCX6Iq1XjwSHPKIyKh6p_#scrollTo=RN_h-hiQ5L9K)
 
 - Some features are a numerical representation of another feature: the column 'education' was pre-encoded and attached to the dataset as the column 'education-­num'.
 - The feature 'relationship' included specific values pertaining the individual's self-identified role in their relationship with a partner. Those in no romantic/guardian relationship were labeled as 'Not-in-family', or 'Unmarried'.
@@ -45,7 +46,7 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - With a last correlation matrix check, we could verify that our selected features play a greater role in determining the outcome of our '50k' values, and can proceed with a simplified dataset. 
 
 ### First Model (Neural Network)
-
+[First Model in NTBK](https://colab.research.google.com/drive/1D4CDiRiPCTuvCX6Iq1XjwSHPKIyKh6p_#scrollTo=pXvzeWvx8VwA&line=1&uniqifier=1)
 - We split our preprocessed data with a 70/30 split.
 - The layers used in the neural network are as follows (activation, nodes):
     - Relu, 7
@@ -69,6 +70,7 @@ model.compile(optimizer = 'rmsprop', loss = 'binary_crossentropy')
 - We think our model isn't really overfitting nor underfittiing as our loss graph quickly flattens out.
 
 ### Second Model (Decision Tree)
+[Second Model in NTBK](https://colab.research.google.com/drive/1D4CDiRiPCTuvCX6Iq1XjwSHPKIyKh6p_#scrollTo=8rpFpV6u8iiQ)
 - We used the same preprocessed data as with our previous model.
 	- Train data had attributes of education, sex, marital status, hours per week, capital loss, capital gain, age, occupation, work class.
 	- Test data carried values of whether the individual's income was greater than or less than 50k.
