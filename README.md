@@ -92,6 +92,7 @@ Our data after preprocessing.
 ![decision tree class report](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontreeclassreport.png?raw=true)
 ![decision tree](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontree.jpg?raw=true)
 
+## Discussion
 ### Data Exploration
 - There is no need to store the same feature values in two different ways; one of the columns can be dropped.
 - The feature 'relationship' values were lacking in terms of:
