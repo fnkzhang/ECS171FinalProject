@@ -13,11 +13,14 @@ Link to Colab NTBK: https://colab.research.google.com/drive/1D4CDiRiPCTuvCX6Iq1X
 
 
 _'A person’s earned income is correlated with numerous factors about the individual. This dataset provides information on whether a person earns more than 50k annually as well as other features about the person including the country they came from, their highest education level, age, occupation, etc. Neural networks are supervised learning models that accept multiple attributes in order to try to predict an outcome. We will train a neural network model to predict an individual’s financial status based on factors such as age, workclass, education, etc. Attributes will be weighed. Thus, our goal with this supervised learning model is to predict whether a person earns above or below 50k annually using the person’s other features. This is useful because it allows us to analyze what are the attributes that determine who earns more than 50,000 dollars, and thus elevate poorer communities out of poverty. '_
-## Initial Cleaning of Dataset
+
+## Methods
+
+### Initial Cleaning of Dataset
 
 - Some values of our dataset include categorical values of strings. As such, we removed any white-spaces that were present in string values. 
 - Some features had missing/null values. We removed them from our dataset.
-## Data Exploration
+### Data Exploration
 
 - Some features are a numerical representation of another feature: the column 'education' was pre-encoded and attached to the dataset as the column 'education-­num'.
 - The feature 'relationship' included specific values pertaining the individual's self-identified role in their relationship with a partner. Those in no romantic/guardian relationship were labeled as 'Not-in-family', or 'Unmarried'. This specific feature was lacking in terms of:
@@ -31,7 +34,7 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - the 'occupation' vs '50k' (ie. income_values) heatmap showed that there were specific jobs that were proving to have a great impact on the income, while all others were under 0.1 measure of correlation. We decided to single out those specific values and combine the rest of the jobs. 
 - 'fnlwgt' included values that described how common an individual's position reflected in society. This specific features poses irrelevant to our goal, and so we eventually removed it from our selected features. 
 - 'education' had values that spanned lower than hs graduate. Its heatmap against '50k' showed that those specifics didnt really alter our income_values.
-## Pre-processing Data
+### Pre-processing Data
 
 [Preprocessing Code](Preprocessing.ipynb)
 - We first did an initial check to verify that our data included no null values.
@@ -43,7 +46,7 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - Finally, we simplified the categories of 'occupation' and 'workclass' to highlight the predominant features that would affect our outcome and also simplify our model's complexity.
 - With a last correlation matrix check, we could verify that our selected features play a greater role in determining the outcome of our income_values, and can proceed with a simplified dataset. 
 
-## First Model (Neural Network)
+### First Model (Neural Network)
 
 - We split our preprocessed data with a 70/30 split.
 - The layers used in the neural network are as follows (activation, nodes):
@@ -58,3 +61,10 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - The classification report gave us an accuracy of 0.83.
 - We think our model isn't really overfitting nor underfittiing as our loss graph quickly flattens out.
 
+## Results
+
+## Discussion
+
+## Conclusion
+
+## Collaboration
