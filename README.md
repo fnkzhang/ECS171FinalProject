@@ -70,7 +70,19 @@ model.compile(optimizer = 'rmsprop', loss = 'binary_crossentropy')
 - The classification report gave us an accuracy of 0.83.
 - We think our model isn't really overfitting nor underfittiing as our loss graph quickly flattens out.
 
+## Second Model (Decision Tree)
+- We used the same preprocessed data as with our previous model.
+	- Train data had attributes of education, sex, marital status, hours per week, capital loss, capital gain, age, occupation, work class.
+	- Test data carried values of whether the individual's income was greater than or less than 50k.
+- We split our preproccesed data with a 70/30 split.
+- The model had a max depth layer of 5.
+- Gini impurity was used.
+```
+model2 = tree.DecisionTreeClassifier(max_depth = 5)
+```
+- This model gave us an accuracy of 0.82.
 ## Results
+
 ### Preprocessing Data
 
 
