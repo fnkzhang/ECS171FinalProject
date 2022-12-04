@@ -58,9 +58,3 @@ _'A person’s earned income is correlated with numerous factors about the indiv
 - The classification report gave us an accuracy of 0.83.
 - We think our model isn't really overfitting nor underfittiing as our loss graph quickly flattens out.
 
-## Second Model (Gaussian Naive Bayes)
-- We split our preproccesed data witha 70/30 split.
-    - The data had been previously standardized.
-- Train data had attributes of education, sex, marital status, hours per week, capital loss, capital gain, age, occupation, work class.
-- Test data carried values of whether the individual's income was greater than or less than 50k.
-- This model gave us an accuracy of 0.81 with all attributes inputed.
