@@ -132,3 +132,14 @@ Our data after preprocessing.
 - After looking at the results, we likely should have kept native country as a data column, as while a decent bit of our important features correlated well with earning 50k, others did not.
 - Thus, we should have checked native country, as it could still be an important feature.
 ## Collaboration
+### Nicolas Conrad
+
+### Pallavi Gupta
+
+### Tiching Kao
+
+### Teresa Lin
+
+### George Luu
+
+### Frank Zhang
