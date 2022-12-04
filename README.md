@@ -87,6 +87,10 @@ model2 = tree.DecisionTreeClassifier(max_depth = 5)
 Our data after preprocessing.
 ![Preprocessed Data](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/Preprocessed%20Data.png?raw=true)
 
+### First Model (Neural Network)
+![Classification Report](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/NN%20ClassReport.png?raw=true)
+![Training Loss](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/NN%20Training%20Loss.png?raw=true)
+
 ### Second Model (Decision Tree)
 - This model gave us an accuracy of 0.82.
 ![decision tree](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontree.jpg?raw=true)
