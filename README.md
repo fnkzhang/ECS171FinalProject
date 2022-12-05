@@ -93,7 +93,8 @@ Our data after preprocessing.
 ### Second Model (Decision Tree)
 ![decision tree class report](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontreeclassreport.png?raw=true)
 ![decision tree](https://github.com/fnkzhang/ECS171FinalProject/blob/main/images/decisiontree.jpg?raw=true)
-
+- This was our final model.
+- As seen in the tree, some of the most important features were capital-gain, capital-loss, marriage-status, and education level.
 ## Discussion
 ### Data Exploration
 - There is no need to store the same feature values in two different ways; one of the columns can be dropped.
@@ -122,7 +123,7 @@ Our data after preprocessing.
 - The increase in training loss could have been an indication of overfitting, as the model was getting too specific resulting in higher loss for the rest of the data. Regardless, this specific model was displaying the indecisive case of increasing training loss and yet relatively high test accuracy, and so we thought to try a different model.
 ### Model 2 (Decision Tree)
 - With model 2, we used a decision tree as it is easy to deduce feature importance by looking at the actual tree.
-- Some of the most important features were capital-gain, capital-loss, marriage-status, and education level.
+- Again, some of the most important features were capital-gain, capital-loss, marriage-status, and education level.
 - Marriage-status as a feature seems like it would be affected by income levels and not the other way around, however.
     - It seems more likely that with money, you are more likely to be able to support a family, rather than with a family, you earn more.
 
