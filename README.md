@@ -127,7 +127,7 @@ Our data after preprocessing.
 - Marriage-status as a feature seems like it would be affected by income levels and not the other way around, however.
     - It seems more likely that with money, you are more likely to be able to support a family, rather than with a family, you earn more.
 ### Interpretation
--We found that the most important features of financial success were capital gain and loss, marital status, and education. Capital gain can refer to an increase in assets such as cars or an increase in stock values. These capital gains are an indicator of the wealth and assets of an individual. We rationalize that wealth is important to predict income because it offers economic safety nets for riskier careers and better access to education and college. This connects to our next finding in that education is another leading factor in predicting financial success. We found that higher education is also important to increasing the chances of an individual making more money. This circles back to the findings about capital gain and loss. Wealthier people have the ability to move to better locations with better schools and pay for college tuition so the students do not have to worry about paying. This is not to generalize all college students as having generational wealth or wealthy parents but just a connection we made with our model.  
+We found that the most important features of financial success were capital gain and loss, marital status, and education. Capital gain can refer to an increase in assets such as cars or an increase in stock values. These capital gains are an indicator of the wealth and assets of an individual. We rationalize that wealth is important to predict income because it offers economic safety nets for riskier careers and better access to education and college. This connects to our next finding in that education is another leading factor in predicting financial success. We found that higher education is also important to increasing the chances of an individual making more money. This circles back to the findings about capital gain and loss. Wealthier people have the ability to move to better locations with better schools and pay for college tuition so the students do not have to worry about paying. This is not to generalize all college students as having generational wealth or wealthy parents but just a connection we made with our model.  
 
 The data set did have native country and race however, the data was extremely skewed and dropped. In a future study, we would like to explore this type of data set but with more or better details about race, geographical location, and college majors. With better race data and immigration, we could have explore the arguments and impacts that reparations would have to fix the racial wealth gap. In the end, it is clear that having wealth and/or more education is the best indicator of future success. The barriers of entry to college needs to be lowered beyond just tuition which can mean cheaper housing, lower application costs, and accessibility to more local colleges.
 
@@ -149,7 +149,7 @@ The data set did have native country and race however, the data was extremely sk
 ### Teresa Lin
 
 ### George Luu
-- Wrote introduction, discussion, conclusion, parts of Abstract
+- Wrote introduction, interpretation, conclusion, parts of Abstract
 - Made unused Gaussian Naive Bayes model
 ### Frank Zhang
 - Created heatmaps to check correlation between features and earning 50k
