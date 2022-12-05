@@ -144,3 +144,7 @@ Our data after preprocessing.
 ### George Luu
 
 ### Frank Zhang
+- Created heatmaps to check correlation between features and earning 50k
+- Implemented buggy version of model1 (issues fixed by Pallavi)
+- Implemented Model 2 after discussing with other groupmates
+- Added Model2 Methods & Results and Conclusion sections to the final writeup
