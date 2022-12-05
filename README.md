@@ -147,7 +147,7 @@ The data set did have native country and race however, the data was extremely sk
 ### Tiching Kao
 
 ### Teresa Lin
-
+- Tried to do the data with some models(such as using Logistic Regression) but it does not seem to work better than using Neural Network(which is the one we all agree to use). 
 ### George Luu
 - Wrote introduction, interpretation, conclusion, parts of Abstract
 - Made unused Gaussian Naive Bayes model
