@@ -145,6 +145,10 @@ The data set did have native country and race however, the data was extremely sk
 - Added ReadMe sections 'Initial Cleaning of Dataset', 'Pre-processing', 'Data Exploration', and contributed to 'Discussion' sections.
 
 ### Tiching Kao
+- Cleaned up initial data by converting file to .csv and removing whitespace.
+- Wrote part of abstract.
+- Added Model 1 into the Methods section of writeup and some figure into the Results section.
+- Played with buggy version of Model 1 though did not figure out why it did nto work.
 
 ### Teresa Lin
 - Tried to do the data with some models(such as using Logistic Regression) but it does not seem to work better than using Neural Network(which is the one we all agree to use). 
