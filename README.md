@@ -136,6 +136,9 @@ Our data after preprocessing.
 ### Nicolas Conrad
 
 ### Pallavi Gupta
+- Worked on Data exploration and Pre-processing the data with Frank's heatmaps and initial dataset clean by Tiching.
+- Fixed selected data feature bug to help run model 1.
+- Added to ReadMe sections 'Initial Cleaning of Dataset', 'Pre-processing', 'Data Exploration', and 'Discussion' with help of groupmates.
 
 ### Tiching Kao
 
