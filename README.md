@@ -145,7 +145,8 @@ Our data after preprocessing.
 ### Teresa Lin
 
 ### George Luu
-
+- Wrote introduction, conclusion, parts of Abstract
+- Made unused Gaussian Naive Bayes model
 ### Frank Zhang
 - Created heatmaps to check correlation between features and earning 50k
 - Implemented buggy version of model1 (issues fixed by Pallavi)
