@@ -138,7 +138,10 @@ The data set did have native country and race however, the data was extremely sk
 - Thus, we should have checked native country, as it could still be an important feature.
 ## Collaboration
 ### Nicolas Conrad
-
+- Organized meeting times
+- Created logistic model to compare to our 1st NN model. Compared the two and determined the NN was better.
+- Discussed the inclusion of the capital gains feature. 
+- Discussed which model to choose in the model 2 phase (Decision Tree vs. Gaussian Naive Bayes).
 ### Pallavi Gupta
 - Worked on Data exploration and Pre-processing the data with Frank's heatmaps and initial dataset clean by Tiching.
 - Fixed selected data feature bug to help run model 1.
