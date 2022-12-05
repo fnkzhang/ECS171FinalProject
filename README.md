@@ -157,7 +157,7 @@ The data set did have native country and race however, the data was extremely sk
 - Tried to do the data with some models(such as using Logistic Regression) but it does not seem to work better than using Neural Network(which is the one we all agree to use). 
 ### George Luu
 - Wrote introduction, interpretation, conclusion, parts of Abstract
-- Tested a Gaussian Naive Bayes model for Model 2
+- Created and tested a Gaussian Naive Bayes model for Model 2
 - Discussed which model should be used for Model 2
 ### Frank Zhang
 - Created heatmaps to check correlation between features and earning 50k
