@@ -132,10 +132,9 @@ We found that the most important features of financial success were capital gain
 The data set did have native country and race however, the data was extremely skewed and dropped. In a future study, we would like to explore this type of data set but with more or better details about race, geographical location, and college majors. With better race data and immigration, we could have explore the arguments of reparations and its impacts to fix the racial wealth gap. In the end, it is clear that having wealth and/or more education is the best indicator of future success. The barriers of entry to college needs to be lowered beyond just tuition which can mean cheaper housing, lower application costs, and accessibility to more local colleges.
 
 ## Conclusion
-- Most of what we did went well; we were able to achieve our goal of figuring out what factors into people earning more.
-- Our models were also decently accurate, meaning that these results are also valid.
-- After looking at the results, we likely should have kept native country as a data column, as while a decent bit of our important features correlated well with earning 50k, others did not.
-- Thus, we should have checked native country, as it could still be an important feature.
+We found that having assets and higher education are the most significant factors in determining an individual’s salary. The models are consistent between published and unpublished models, indicating the result’s validity. 
+While native country and race were possible attributes that could have been kept as data, our results can be incorporated with other studies that can explore wealth gaps between people of different backgrounds. Our findings hope to influence future decisions that can help American society.
+
 ## Collaboration
 ### Nicolas Conrad
 - Organized meeting times
